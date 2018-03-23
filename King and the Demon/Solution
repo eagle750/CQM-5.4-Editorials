@@ -1,0 +1,32 @@
+#include <bits/stdc++.h>
+#define ll long long int
+#define vi vector<ll>
+#define vvi vector<vector<ll> >
+#define pb push_back
+#define mp make_pair
+#define icin(x) scanf("%d",&x);
+#define rep(i, n)  for(int i = 1; i < =n; ++i)
+#define SORT(v) sort(v.begin(),v.end())
+#define fill(a,v)  memset(a, v, sizeof (a))
+#define T ll t; cin>>t;while(t--)
+#define fast_io  ios_base::sync_with_stdio(false);cin.tie(NULL);
+#define MAX 100005
+#define endl "\n"
+using namespace std;
+
+
+int main() {
+ll n,cnt=0,a;
+	map<ll,ll>mp;
+	cin>>n;
+	for(ll i=0;i<n;i++){
+		cin>>a;
+		while(mp[a]==1&&a>0) 
+		    a--;
+	    mp[a]=1;
+		cnt+=a;
+	
+	}
+	cout<<cnt; 
+    return 0;
+}
